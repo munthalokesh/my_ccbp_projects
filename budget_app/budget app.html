@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="budget_app.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b3c3e8036.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="container">
+            <div class="row">
+                <div class="m-auto pt-5">
+                    <h1 class="header">Budget App</h1>
+                </div>
+                <div class="col-12">
+                    <div class="budget-card d-flex flex-row justify-content-around">
+                        <div class="text-center">
+                            <p class="specification">Budget</p>
+                            <img class="image" src="https://assets.ccbp.in/frontend/dynamic-webapps/budget-img.png" />
+                            <p class="amount" id="budgetAmount">0</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="specification">Expenses</p>
+                            <img class="image" src="https://assets.ccbp.in/frontend/dynamic-webapps/expenses-img.png" />
+                            <p class="amount" id="totalExpensesAmount">0</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="specification">Balance</p>
+                            <img class="image" src="https://assets.ccbp.in/frontend/dynamic-webapps/balance-img.png" />
+                            <p class="amount" id="balanceAmount">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="budget-section" id="form1">
+                        <label class="label" for="budgetInput">Please enter the budget</label><br />
+                        <input type="text" placeholder="in Rupeess" class="form-control" id="budgetInput" /><br />
+                        <p class="error-mssg" id="budgetInputErrMsg"></p>
+                        <button class="btn btn-primary" id="setBudgetBtn">Set Budget</button>
+                    </div>
+                    <div class="budget-section" id="form2">
+                        <label class="label" for="expenseTitleInput">Please enter the Expense title</label><br />
+                        <input type="text" placeholder="title" id="expenseTitleInput" class="form-control" /><br />
+                        <p class="error-mssg" id="expenseTitleInputErrMsg"></p>
+                        <label class="label" for="expenseAmountInput">Please enter the Expense amount</label><br />
+                        <input type="text" id="expenseAmountInput" placeholder="in Rupeess" class="form-control" /><br />
+                        <p class="error-mssg" id="expenseAmountInputErrMsg"></p>
+                        <button class="btn btn-secondary" id="addExpenseBtn">Add Expenses</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="budget-section text-center">
+                        <h1 class="header">Expense History</h1>
+                        <ul id="expensesHistory" class="list mt-4"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="budget app.js"></script>
+</body>
+
+</html>

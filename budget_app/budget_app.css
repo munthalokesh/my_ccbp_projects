@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container {
+    background-color: #fff7ed;
+    font-family: "Roboto";
+    padding: 20px;
+}
+
+.budget-card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.amount {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.specification {
+    font-size: 17px;
+    padding-bottom: 0px;
+}
+
+.image {
+    width: 30px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.budget-section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.label {
+    color: #334155;
+}
+
+.expense-section {
+    height: 600px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.error-mssg {
+    color: red;
+}
+
+.width {
+    width: 120px;
+}
